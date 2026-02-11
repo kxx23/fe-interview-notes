@@ -1,0 +1,55 @@
+site_name: "FE Interview Notes"
+site_description: "KB 的前端面试笔记（公开版）"
+site_url: "https://kxx23.github.io/fe-interview-notes/"
+repo_url: "https://github.com/kxx23/fe-interview-notes"
+repo_name: "kxx23/fe-interview-notes"
+edit_uri: "edit/main/docs/"
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+nav:
+  - Home: README.md
+  - Index:
+      - Roadmap: 00-Index/Roadmap.md
+      - Topics: 00-Index/Topics.md
+      - Question Bank: 00-Index/Question-Bank.md
+  - Core JS:
+      - Promise combinators: 01-Core-JS/02-Promises/Promise-Combinators.md
+      - Promises fundamentals: 01-Core-JS/02-Promises/Promises.md
+      - Event loop: 01-Core-JS/01-Event-Loop/Event-Loop.md
+      - this rules: 01-Core-JS/03-This-Prototype-Closures/this.md
+      - closures & scope: 01-Core-JS/03-This-Prototype-Closures/closure-scope.md
+      - type coercion: 01-Core-JS/04-Types-Coercion/types-coercion.md
+  - Coding:
+      - promisePool: 10-Coding/Async/promisePool.md
+      - debounce: 10-Coding/Async/debounce.md
+      - throttle: 10-Coding/Async/throttle.md
+      - deepClone: 10-Coding/Core/deepClone.md
+      - EventEmitter: 10-Coding/Core/eventEmitter.md
+      - LRUCache: 10-Coding/Core/lruCache.md
